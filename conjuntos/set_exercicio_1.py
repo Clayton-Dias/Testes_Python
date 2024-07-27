@@ -24,7 +24,7 @@ O operador - (diferença) retorna um novo conjunto com os elementos do primeiro 
 letras = set(("a", "e", "i", "o", "u"))
 
 #Exiba na tela o tamanho do conjunto letras.
-print(len(letras))
+print(f"O tamanho do conjunto de lteras é: {len(letras)}")
 
 #Adicione a consoante "b" ao conjunto letras.
 letras.add("b")
@@ -43,14 +43,17 @@ letras.remove("b")
 consoantes = set(("b", "d", "f"))
 
 #Verifique se o conjunto consoantes está contido no conjunto letras.
-if consoantes in letras:
-    print(f"O conjunto {consoantes} está em no conjunto de {letras}")
+#print("O conjunto consoantes está contido no conjunto letras:", consoantes.issubset(letras))
+
+if consoantes.issubset(letras) == True:
+    print("O conjunto de consoantes está contido conjuntos de letras")
 else:
-    print(f"O conjunto {consoantes} não está em no conjunto de {letras}")
+    print("O conjunto de consoantes não está contido conjuntos de letras")
+
 
 #Exiba na tela a união dos conjuntos letras e consoantes (todos os elementos sem repetições).
 #uniao = letras.union(consoantes)
 #uniao = letras|consoantes
 #print(uniao)
-print(letras|consoantes)
+print(f"União dos conjuntos letras e consoantes é: {letras|consoantes}")
 

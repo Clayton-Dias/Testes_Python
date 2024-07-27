@@ -34,5 +34,5 @@ else:
 
 #Exiba na tela o último item da tupla mercado.
 x = mercado.index("batata")
-print(mercado[x])
-#print(mercado[-1])
+print(f"O último item da lista de compras é: {mercado[x]}")
+#print(f"O último item da lista de compras é: {mercado[-1]}")

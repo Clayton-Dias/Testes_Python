@@ -15,7 +15,7 @@ Para criar uma nova tupla a partir de outra, você pode utilizar o fatiamento ou
 """
 #Criando tupla ue armazene as cores do arco-íris
 minha_tupla = ("vermelho", "laranja", "amarelo", "verde", "azul", "anil","violeta")
-print(minha_tupla)
+#print(minha_tupla)
 
 #Mostrnado na tela a cor que está na quarta posição da tupla.
 print(minha_tupla[3])
@@ -27,6 +27,9 @@ print(minha_tupla[3])
 cores_invertidas = list(minha_tupla)
 cores_invertidas.reverse()
 cores_invertidas = tuple(cores_invertidas)
+
+#Crie uma nova tupla chamada cores_invertidas que seja a reversa da minha_tupla usando fatiamento.
+#cores_invertidas = minha_tupla[::-1]
 
 #Mostrando na tela a cores_invertidas.
 print(cores_invertidas)
