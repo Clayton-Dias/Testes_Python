@@ -15,13 +15,13 @@ Para adicionar um novo par chave-valor, utilize a atribuição dentro dos colche
 Para iterar sobre as chaves de um dicionário, utilize o loop for.
 Para iterar sobre os pares chave-valor de um dicionário, utilize o loop for com a função items().
 """
-#Crie um dicionário chamado agenda para armazenar informações de contato de seus amigos:
-#Chave: nome do amigo (string)
-#Valor: dicionário com informações de contato (telefone, email)
+# Crie um dicionário chamado agenda para armazenar informações de contato de seus amigos:
+# Chave: nome do amigo (string)
+# Valor: dicionário com informações de contato (telefone, email)
 agenda = {}
 
-#Adicione 3 amigos à sua agenda, cada um com nome, telefone e email.
-#Utilize a função dict() para criar um dicionário.
+# Adicione 3 amigos à sua agenda, cada um com nome, telefone e email.
+# Utilize a função dict() para criar um dicionário.
 agenda = dict(
     Ana=dict(
         telefone="1234-5678",
@@ -38,10 +38,13 @@ agenda = dict(
 )
 
 #Exiba na tela o telefone do primeiro amigo da agenda.
-primeiro_amigo =  list(agenda.keys()) #Obtendo a lista de amigos
-primeiro_amigo = primeiro_amigo[0]  #Obtendo o nome do primeiro amigo da lista
+primeiro_amigo = list(agenda.keys())  # Obtendo a lista de amigos
+primeiro_amigo = primeiro_amigo[0]  # Obtendo o nome do primeiro amigo da lista
 
-print(f"O telefone do primeiro amigo da agenda, que é a {primeiro_amigo}, é {agenda[primeiro_amigo]["telefone"]}.")
+telefone = agenda[primeiro_amigo]["telefone"]
+
+print(f"O telefone do primeiro amigo da agenda, que é a {primeiro_amigo}, é {telefone}.")
+#print(f"O telefone do primeiro amigo da agenda, que é a {primeiro_amigo}, é {agenda[primeiro_amigo]["telefone"]}.")
 
 #Modifique o email do segundo amigo para um novo endereço.
 agenda["Brian"]["email"] = "brian@email.br"

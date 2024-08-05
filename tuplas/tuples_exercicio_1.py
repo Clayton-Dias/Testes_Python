@@ -14,7 +14,8 @@ As tuplas são imutáveis, ou seja, seus valores não podem ser modificados apó
 Para criar uma nova tupla a partir de outra, você pode utilizar o fatiamento ou a função tuple().
 """
 #Criando tupla ue armazene as cores do arco-íris
-minha_tupla = ("vermelho", "laranja", "amarelo", "verde", "azul", "anil","violeta")
+minha_tupla = tuple(("vermelho", "laranja", "amarelo", "verde", "azul", "anil","violeta"))
+#minha_tupla = ("vermelho", "laranja", "amarelo", "verde", "azul", "anil","violeta")
 #print(minha_tupla)
 
 #Mostrnado na tela a cor que está na quarta posição da tupla.
@@ -33,3 +34,4 @@ cores_invertidas = tuple(cores_invertidas)
 
 #Mostrando na tela a cores_invertidas.
 print(cores_invertidas)
+#print(minha_tupla)
